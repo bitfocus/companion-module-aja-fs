@@ -15,9 +15,11 @@ export class ModuleInstance extends InstanceBase<ModuleConfig> {
 
 	async init(config: ModuleConfig): Promise<void> {
 		this.config = config
-
-		this.updateStatus(InstanceStatus.Ok)
-
+		if (this.config.host) {
+			this.updateStatus(InstanceStatus.Ok)
+		} else {
+			this.updateStatus(InstanceStatus.BadConfig, 'Missing target')
+		}
 		this.updateActions() // export actions
 		this.updateFeedbacks() // export feedbacks
 		this.updateVariableDefinitions() // export variable definitions
@@ -29,6 +31,11 @@ export class ModuleInstance extends InstanceBase<ModuleConfig> {
 
 	async configUpdated(config: ModuleConfig): Promise<void> {
 		this.config = config
+		if (this.config.host) {
+			this.updateStatus(InstanceStatus.Ok)
+		} else {
+			this.updateStatus(InstanceStatus.BadConfig, 'Missing target')
+		}
 	}
 
 	// Return config fields for web config
