@@ -14,14 +14,5 @@ export function GetConfigFields(): SomeCompanionConfigField[] {
 			width: 8,
 			regex: Regex.IP,
 		},
-		{
-			type: 'number',
-			id: 'port',
-			label: 'Target Port',
-			width: 4,
-			min: 1,
-			max: 65535,
-			default: 8000,
-		},
 	]
 }
