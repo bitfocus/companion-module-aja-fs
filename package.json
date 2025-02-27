@@ -1,6 +1,6 @@
 {
 	"name": "aja-fs",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"main": "dist/main.js",
 	"type": "module",
 	"scripts": {
@@ -20,7 +20,7 @@
 	},
 	"dependencies": {
 		"@companion-module/base": "~1.11.2",
-		"got": "^14.4.6"
+		"ky": "^1.7.5"
 	},
 	"devDependencies": {
 		"@companion-module/tools": "^2.1.1",
