@@ -23,12 +23,8 @@ export function UpdateActions(self: ModuleInstance): void {
 				},
 			],
 			callback: async (event) => {
-				console.log('Set Audio Output', event.options)
-				const json = await ky
-					.get(
-						`http://${self.config.host}/config?action=set&paramid=eParamID_AudioOutputSelect_Vid${event.options.output}Embed&value=${event.options.mode}8&configid=0`,
-					)
-					.json()
+				const url = `http://${self.config.host}/config?action=set&paramid=eParamID_AudioOutputSelect_Vid${event.options.output}Embed&value=${event.options.mode}&configid=0`
+				const json = await ky.get(url).json()
 				if (json) {
 					console.log('Result', json)
 				}
@@ -60,11 +56,8 @@ export function UpdateActions(self: ModuleInstance): void {
 				},
 			],
 			callback: async (event) => {
-				const json = await ky
-					.get(
-						`http://${self.config.host}/config?action=set&paramid=eParamID_AudioOutputCh${event.options.outputChannel}_SDI${event.options.output}&value=${event.options.sourceChannel}&configid=0`,
-					)
-					.json()
+				const url = `http://${self.config.host}/config?action=set&paramid=eParamID_AudioOutputCh${event.options.outputChannel}_SDI${event.options.output}&value=${event.options.sourceChannel}&configid=0`
+				const json = await ky.get(url).json()
 				if (json) {
 					console.log('Result', json)
 				}
