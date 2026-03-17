@@ -346,12 +346,19 @@ export const SDI_FORMATS: ParamChoice[] = [
 	{ id: '98', label: 'No Input' },
 ]
 
-/** Map product ID strings to device type */
+/**
+ * Map eParamID_ProductID response to device type.
+ *
+ * Product IDs confirmed via firmware extraction:
+ *   FS-HDR  → PRODUCT_ID="TORU"   (etc/init.d/aja-all, systemd toru-env)
+ *   FS4     → PRODUCT_ID="SATO"   (etc/init.d/aja-all, systemd sato-env)
+ *   FS2     → PRODUCT_ID="FS2"
+ */
 export function detectDevice(productId: string): DeviceType {
 	const upper = productId.toUpperCase()
 	if (upper.includes('TORU') || upper.includes('FS-HDR') || upper.includes('FSHDR')) return 'FS-HDR'
-	if (upper.includes('FS4') || upper.includes('CORVID')) return 'FS4'
-	if (upper.includes('FS2') || upper.includes('XENA')) return 'FS2'
+	if (upper.includes('SATO') || upper.includes('FS4')) return 'FS4'
+	if (upper.includes('FS2')) return 'FS2'
 	return 'unknown'
 }
 
