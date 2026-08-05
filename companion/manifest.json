@@ -1,8 +1,9 @@
 {
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"id": "aja-fs",
-	"name": "aja-fs",
-	"shortname": "fs",
-	"description": "FS",
+	"name": "AJA FS Series",
+	"shortname": "AJA FS",
+	"description": "Control AJA FS2, FS4, and FS-HDR frame synchronizers and converters",
 	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-aja-fs.git",
@@ -11,6 +12,10 @@
 		{
 			"name": "William Viker",
 			"email": "william@bitfocus.io"
+		},
+		{
+			"name": "Ian Liuzzi-Fedun",
+			"email": "ian@liuzzifedunstudios.com"
 		}
 	],
 	"runtime": {
@@ -22,5 +27,5 @@
 	"legacyIds": [],
 	"manufacturer": "AJA",
 	"products": ["FS2", "FS4", "FS-HDR"],
-	"keywords": []
+	"keywords": ["aja", "fs2", "fs4", "fs-hdr", "hdr", "frame-sync", "converter"]
 }

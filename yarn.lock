@@ -5,20 +5,20 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@companion-module/base@npm:~1.11.2":
-  version: 1.11.3
-  resolution: "@companion-module/base@npm:1.11.3"
+"@companion-module/base@npm:~1.14.1":
+  version: 1.14.1
+  resolution: "@companion-module/base@npm:1.14.1"
   dependencies:
     ajv: "npm:^8.17.1"
     colord: "npm:^2.9.3"
     ejson: "npm:^2.2.3"
     eventemitter3: "npm:^5.0.1"
     mimic-fn: "npm:^3.1.0"
-    nanoid: "npm:^3.3.8"
+    nanoid: "npm:^3.3.11"
     p-queue: "npm:^6.6.2"
     p-timeout: "npm:^4.1.0"
     tslib: "npm:^2.8.1"
-  checksum: 10c0/19acbc544de97ed8f02abf03e1d657085e51f0e92363456a84bdc1975723ba1bdfc0e943ff17444cb4e6a2b588abb794a9c5b48efb4d784be32784362e7c4efd
+  checksum: 10c0/55296836c01197e811ccf5dac9faa2b815668532754315c00b5fc14193fc969f58da0fc2e62eb572f0a3cfc1901ad56574000b389a386f8d929f4a9c6237140f
   languageName: node
   linkType: hard
 
@@ -684,24 +684,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aja-fs@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "aja-fs@workspace:."
-  dependencies:
-    "@companion-module/base": "npm:~1.11.2"
-    "@companion-module/tools": "npm:^2.6.1"
-    "@types/node": "npm:^22.10.2"
-    eslint: "npm:^9.17.0"
-    husky: "npm:^9.1.7"
-    ky: "npm:^1.7.5"
-    lint-staged: "npm:^15.2.11"
-    prettier: "npm:^3.4.2"
-    rimraf: "npm:^6.0.1"
-    typescript: "npm:~5.5.4"
-    typescript-eslint: "npm:^8.18.1"
-  languageName: unknown
-  linkType: soft
-
 "ajv-formats@npm:^2.1.1":
   version: 2.1.1
   resolution: "ajv-formats@npm:2.1.1"
@@ -995,6 +977,23 @@ __metadata:
   checksum: 10c0/74c781a5248c2402a0a3e966a0a2bba3c054aad144f5c023364be83265e796b20565aa9feff624132ff629aa64e16999fa40a743c10c12f7c61e96a794b99288
   languageName: node
   linkType: hard
+
+"companion-module-aja-fs@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "companion-module-aja-fs@workspace:."
+  dependencies:
+    "@companion-module/base": "npm:~1.14.1"
+    "@companion-module/tools": "npm:^2.6.1"
+    "@types/node": "npm:^22.10.2"
+    eslint: "npm:^9.17.0"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^15.2.11"
+    prettier: "npm:^3.4.2"
+    rimraf: "npm:^6.0.1"
+    typescript: "npm:~5.5.4"
+    typescript-eslint: "npm:^8.18.1"
+  languageName: unknown
+  linkType: soft
 
 "concat-map@npm:0.0.1":
   version: 0.0.1
@@ -1864,13 +1863,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky@npm:^1.7.5":
-  version: 1.7.5
-  resolution: "ky@npm:1.7.5"
-  checksum: 10c0/9f9c70a4916592f728c90e38ecbe2ed468eb7161b7525a4561a861e457edd5cb706751e2aba615d350380231d021f535147f9ed3ca07271af836465ecc725761
-  languageName: node
-  linkType: hard
-
 "levn@npm:^0.4.1":
   version: 0.4.1
   resolution: "levn@npm:0.4.1"
@@ -2094,12 +2086,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.8":
-  version: 3.3.8
-  resolution: "nanoid@npm:3.3.8"
+"nanoid@npm:^3.3.11":
+  version: 3.3.11
+  resolution: "nanoid@npm:3.3.11"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 10c0/4b1bb29f6cfebf3be3bc4ad1f1296fb0a10a3043a79f34fbffe75d1621b4318319211cd420549459018ea3592f0d2f159247a6f874911d6d26eaaadda2478120
+  checksum: 10c0/40e7f70b3d15f725ca072dfc4f74e81fcf1fbb02e491cf58ac0c79093adc9b0a73b152bcde57df4b79cd097e13023d7504acb38404a4da7bc1cd8e887b82fe0b
   languageName: node
   linkType: hard
 
